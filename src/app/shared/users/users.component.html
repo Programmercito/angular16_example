@@ -1,0 +1,32 @@
+<p>2</p>
+<table>
+    <tr>
+        <th>NOMBRE</th>
+        <th>FECHA</th>
+        <th>CELULAR</th>
+        <th>FIJO</th>
+        <th>DIRECCION</th>
+        <th>EDAD</th>
+    </tr>
+    <tr *ngFor="let user of this.lista">
+        <td>
+            {{user.nombre}}
+        </td>
+        <td>
+            {{user.fecha}}
+        </td>
+        <td>
+            {{user.celular}}
+        </td>
+        <td>
+            {{user.fijo}}
+        </td>
+        <td>
+            {{user.direccion}}
+        </td>
+        <td>
+            {{getEdad(user.fecha)}}
+        </td>
+    </tr>
+
+</table>
